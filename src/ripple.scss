@@ -1,0 +1,66 @@
+$color:white;
+
+// body
+// {
+//   background-color:black;
+//   overflow:hidden;
+// }
+
+// .wrap
+// {
+//   position:absolute;
+//   margin:0 auto;left:0;right:0;
+//   display:flex;
+//   justify-content:center;
+//   align-items:center;
+//   flex-direction:row;
+//   height:100%;
+// }
+
+
+
+button
+{
+  background:white;
+  // cursor:pointer;
+  border: 2px solid white;
+  color: white;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  border-radius: 20%;
+  text-transform: uppercase;
+  font-family: 'Muli-LightItalic', Helvetica;
+  font-size: 20px;
+  line-height: 30px;
+  animation: ripple 1.5s linear infinite;
+  transition: all 0.7s ease;
+
+
+  &:hover
+  {
+   transform: scale(1.5);
+  }
+  &:focus
+  {
+    outline:none;
+  }
+}
+
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba($color, 0.3),
+        0 0 0 1px rgba($color, 0.3),
+        0 0 0 3px rgba($color, 0.3),
+        0 0 0 5px rgba($color, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba($color, 0.3),
+        0 0 0 4px rgba($color, 0.3),
+        0 0 0 20px rgba($color, 0),
+        0 0 0 30px rgba($color, 0);
+    }
+}
